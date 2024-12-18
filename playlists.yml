@@ -1,0 +1,70 @@
+######################################################
+#                    Playlists                       #
+######################################################
+
+templates:
+  tlists:
+    trakt_list: <<list>>
+    url_poster: https://<<poster>>
+    libraries: movies,tv,movies4k,tv4k
+    sync_mode: sync
+    delete_playlist: false
+  sleepytime:
+    sync_mode: sync
+    sync_to_users:
+    libraries: tv
+    url_poster: https://<<poster>>
+    plex_search:
+      sort_by:  release.asc
+      type: episode
+      all:
+        title.is: <<title>>
+        episode_air_date.not: 14       # this field only accepts days so weeks cannot be added directly
+        episode_unplayed: false
+        episode_last_played.not: 21    # this field only accepts days so weeks cannot be added directly
+
+playlists:
+
+######################################################
+#                    Smarties                        #
+######################################################  
+
+  Sleepytime Archer:
+    template: {name: sleepytime, title: Archer (2009), poster: theposterdb.com/api/assets/11645}
+
+  Sleepytime Rick And Morty:
+    template: {name: sleepytime, title: Rick and Morty, poster: theposterdb.com/api/assets/24560}
+
+  Animated SleepyTime:
+    sync_mode: sync
+    sync_to_users:
+    libraries: tv
+    url_poster: https://i.scdn.co/image/ab67616d0000b2738bce26dd1c8180f424cbef00
+    plex_search:
+      sort_by: random
+      type: episode
+      limit: 100
+      all:
+        any:
+          title.is:
+            - Archer (2009)
+            - Rick And Morty
+            - American Dad!
+            - Family Guy
+        episode_unplayed: false
+        episode_air_date.not: 14       # this field only accepts days so weeks cannot be added directly
+        episode_last_played.not: 21    # this field only accepts days so weeks cannot be added directly
+
+######################################################
+#                     Dynamic                        #
+######################################################  
+
+  MCU Chronological:
+    template: {name: tlists, list: "https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc", poster: imgur.com/cx4CpKo.png}
+    summary: Marvel Cinematic Universe In Chronological Order
+    sync_to_users: jackienewman
+  
+  Star Wars Chronological:
+    template: {name: tlists, list: "https://trakt.tv/users/khaosx/lists/star-wars-timeline?sort=rank,asc", poster: theposterdb.com/api/assets/39137}
+    summary: The Star Wars Universe In Chronological Order
+    sync_to_users: jackienewman

@@ -1,0 +1,45 @@
+######################################################
+#              PMM Config - Episodes                 #
+######################################################
+
+templates:
+  Chart:
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    item_refresh: true
+  Network:
+    mdblist_list:
+      url: https://mdblist.com/lists/k0meta/<<streamer>>-originals
+    sync_mode: sync
+    collection_order: custom
+    sort_title: +<<collection_name>>
+    summary: Original Shows From <<collection_name>>
+    url_poster: https://theposterdb.com/api/assets/<<poster>>
+
+collections:
+
+# Chart Collections
+
+  Popular on khaosx:
+    template: { name: Chart, num: 1 }
+    tautulli_popular:
+      list_days: 30
+      list_size: 20
+      list_buffer: 20
+      list_minimum: 1
+    summary: The 20 most watched shows on khaosx
+
+  Trending TV:
+    template: { name: Chart, num: 2 }
+    tmdb_popular: 40
+    summary: Popular Shows across the internet
+
+  Top Rated Mini-Series:
+    imdb_search:
+      type: tv_mini_series
+      sort_by: votes.desc
+      limit: 50
+    collection_order: custom
+    sort_title: +1_<<num>><<collection_name>>
+    sync_mode: sync
