@@ -1,1 +1,42 @@
----
+################################################################################
+# movie-collections.yml — Kometa collection file for the Movies library
+#
+# Reference it from config.yml:
+#
+#   libraries:
+#     Movies:
+#       collection_files:
+#         - file: config/movie-collections.yml
+################################################################################
+
+templates:
+
+  # Actor filmography collection.
+  # Built from TMDb's full credit list for the person, matched against the
+  # library. Titles not in the library are skipped unless radarr_add_missing
+  # is turned on for a given collection.
+  actor:
+    default:
+      limit: 200
+    tmdb_discover:
+      with_cast: <<tmdb_person_id>>
+      sort_by: release_date.desc
+      limit: <<limit>>
+    sync_mode: sync
+    collection_order: release
+    minimum_items: 2
+    delete_below_minimum: true
+    sort_title: "!020_<<collection_name>>"
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+collections:
+
+  Jason Statham:
+    template:
+      name: actor
+      tmdb_person_id: 976
+    summary: >-
+      Transporter, bank robber, deep-sea shark bait. Every film in the library
+      featuring Jason Statham.
