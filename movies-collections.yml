@@ -1,13 +1,13 @@
 ################################################################################
-# movie-collections.yml — Kometa collection file for the Movies library
+## movie-collections.yml — Kometa collection file for the Movies library
+## Titles not in the library are skipped unless radarr_add_missing is turned on 
+## for a given collection.
 ################################################################################
 
 templates:
 
   ##############################################################################
-  # Actor filmography - built from TMDb's full credit list for the person, 
-  # matched against the library. Titles not in the library are skipped unless 
-  # radarr_add_missing is turned on for a given collection.
+  ## Actor filmography built from TMDb's person data, matched to library.
   ##############################################################################
 
   actor:
@@ -25,13 +25,11 @@ templates:
     visible_library: true
     visible_home: false
     visible_shared: true
-    radarr_add_missing: false
 
   ###########################################################################
-  # TMDb collection - built from TMDb's collection data, matched against the
-  # library. Titles not in the library are skipped unless radarr_add_missing
-  # is turned on for a given collection.
+  ## Collections built from TMDb's collection data, matched to library. 
   ###########################################################################
+
   tmdb-lists:
     optional:
       - collections
@@ -48,29 +46,46 @@ templates:
     url_poster: <<poster>>
     sync_mode: sync    
     sort_title: +03_<<collection_name>>
-    radarr_add_missing: true
+    radarr_add_missing: false
+
+  ############################################################################
+  ## Collections built from Letterboxd list data, matched to library.
+  ############################################################################
+
+  letterboxd-lists:
+    optional:
+      - letterboxd_list
+      - summary
+      - poster
+    letterboxd_list: <<letterboxd_list>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sync_mode: sync    
+    sort_title: +03_<<collection_name>>
+    collection_order: release
 
   ###########################################################################
-  # IMDb list - built from IMDb's list data, matched against the library. 
-  # Titles not in the library are skipped unless radarr_add_missing is turned 
-  # on for a given collection.
+  ## IMDb list - built from IMDb's list data, matched to library. 
   ###########################################################################
+
   imdb-lists:
     url_poster: <<poster>>
     summary: <<summary>>
     sort_title: +03_<<collection_name>>
-    radarr_add_missing: true
+    radarr_add_missing: false
     sync_mode: sync
 
-
 collections:
+
   ###################################################
   ## Actor Filmography Collections
   ###################################################
+
   Jason Statham:
     template:
-      name: actor
+      name: actor-no-add
       tmdb_person_id: 976
+    radarr_add_missing: false
     summary: >-
       Transporter, bank robber, deep-sea shark bait. Every film in the library
       featuring Jason Statham.
@@ -91,13 +106,47 @@ collections:
     template: {name: tmdb, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
   Transformers:
     template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
-  Batman:
+  Batman (Classic/Burton/Schumacher 66-97):
     template: {name: tmdb, collections: "120794", tmdb_summary: 120794, poster: https://theposterdb.com/api/assets/52698}
   John Wick:
-    template: {name: tmdb, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
+    template: {name: tmdb-add, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
   The Godfather:
-    template: {name: tmdb, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
+    template: {name: tmdb-add, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
   Taken:
-    template: {name: tmdb, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
+    template: {name: tmdb-add, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
   Kingsman:
-    template: {name: tmdb, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
+    template: {name: tmdb-add, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
+
+  ###########################################################################
+  ## MCU Phases
+  ###########################################################################
+
+  MCU Phase 1 (2008 to 2012):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/, url_poster: https://theposterdb.com/api/assets/445730}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 1
+
+  MCU Phase 2 (2013 to 2015):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/, url_poster: https://theposterdb.com/api/assets/445731}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 2.    
+
+  MCU Phase 3 (2016 to 2019):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/, url_poster: https://theposterdb.com/api/assets/445732}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 3.
+    
+  MCU Phase 4 (2021 to 2022):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/, url_poster: https://theposterdb.com/api/assets/445733}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 4.    
+
+  MCU Phase 5 (2023 to 2025):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-5/, url_poster: https://theposterdb.com/api/assets/445734}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 5.
+
+  MCU Phase 6 (2025 to 2027):
+    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-6/, url_poster: https://theposterdb.com/api/assets/445735}
+    radarr_add_missing: true
+    summary: All movies from the Marvel Cinematic Universe Phase 6.  
