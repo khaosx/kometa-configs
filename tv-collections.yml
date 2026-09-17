@@ -8,14 +8,6 @@ templates:
     sync_mode: sync
     collection_order: custom
     item_refresh: true
-  Network:
-    mdblist_list:
-      url: https://mdblist.com/lists/k0meta/<<streamer>>-originals
-    sync_mode: sync
-    collection_order: custom
-    sort_title: +<<collection_name>>
-    summary: Original Shows From <<collection_name>>
-    url_poster: https://theposterdb.com/api/assets/<<poster>>
 
 collections:
 
