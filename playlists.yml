@@ -65,6 +65,6 @@ playlists:
     sync_to_users: jackienewman
   
   Star Wars Chronological:
-    template: {name: tlists, list: "https://trakt.tv/users/khaosx/lists/star-wars-timeline?sort=rank,asc", poster: theposterdb.com/api/assets/39137}
+    template: {name: tlists, list: "https://trakt.tv/users/khaosx/lists/star-wars-timeline?sort=rank,asc", poster: theposterdb.com/api/assets/4448}
     summary: The Star Wars Universe In Chronological Order
     sync_to_users: jackienewman
