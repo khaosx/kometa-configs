@@ -25,6 +25,9 @@ templates:
     visible_library: true
     visible_home: false
     visible_shared: true
+    schedule: 
+     - monthly(1)
+     - monthly(15)
 
   ###########################################################################
   ## Collections built from TMDb's collection data, matched to library. 
@@ -49,7 +52,10 @@ templates:
     collection_order: release
     sort_title: +03_<<collection_name>>
     radarr_add_missing: false
-
+    schedule: 
+    - monthly(1)
+    - monthly(15)
+  
   ############################################################################
   ## Collections built from Letterboxd list data, matched to library.
   ############################################################################
@@ -66,6 +72,9 @@ templates:
     limit: 200
     sort_title: +03_<<collection_name>>
     collection_order: custom
+    schedule: 
+     - monthly(1)
+     - monthly(15)
 
   ###########################################################################
   ## IMDb list - built from IMDb's list data, matched to library. 
@@ -77,6 +86,9 @@ templates:
     sort_title: +03_<<collection_name>>
     radarr_add_missing: false
     sync_mode: sync
+    schedule: 
+     - monthly(1)
+     - monthly(15)
 
 collections:
 
