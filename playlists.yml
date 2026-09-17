@@ -6,7 +6,7 @@ templates:
   tlists:
     trakt_list: <<list>>
     url_poster: https://<<poster>>
-    libraries: movies,tv,movies4k,tv4k
+    libraries: Movies,TV
     sync_mode: sync
     delete_playlist: false
   sleepytime:
@@ -38,7 +38,7 @@ playlists:
   Animated SleepyTime:
     sync_mode: sync
     sync_to_users:
-    libraries: tv
+    libraries: TV
     url_poster: https://i.scdn.co/image/ab67616d0000b2738bce26dd1c8180f424cbef00
     plex_search:
       sort_by: random
