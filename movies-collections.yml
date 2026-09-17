@@ -44,7 +44,9 @@ templates:
     tmdb_summary: <<tmdb_summary>>
     summary: <<summary>>
     url_poster: <<poster>>
-    sync_mode: sync    
+    sync_mode: sync
+    limit: 200
+    collection_order: release
     sort_title: +03_<<collection_name>>
     radarr_add_missing: false
 
@@ -60,9 +62,10 @@ templates:
     letterboxd_list: <<letterboxd_list>>
     summary: <<summary>>
     url_poster: <<poster>>
-    sync_mode: sync    
+    sync_mode: sync
+    limit: 200
     sort_title: +03_<<collection_name>>
-    collection_order: release
+    collection_order: custom
 
   ###########################################################################
   ## IMDb list - built from IMDb's list data, matched to library. 
