@@ -19,15 +19,14 @@ templates:
       limit: <<limit>>
     sync_mode: sync
     collection_order: release
-    minimum_items: 2
+    minimum_items: 4
     delete_below_minimum: true
     sort_title: "!020_<<collection_name>>"
     visible_library: true
     visible_home: false
     visible_shared: true
     schedule: 
-     - monthly(1)
-     - monthly(15)
+     - daily
 
   ###########################################################################
   ## Collections built from TMDb's collection data, matched to library. 
@@ -53,8 +52,7 @@ templates:
     sort_title: +03_<<collection_name>>
     radarr_add_missing: false
     schedule: 
-    - monthly(1)
-    - monthly(15)
+    - daily
   
   ############################################################################
   ## Collections built from Letterboxd list data, matched to library.
@@ -73,8 +71,7 @@ templates:
     sort_title: +03_<<collection_name>>
     collection_order: custom
     schedule: 
-     - monthly(1)
-     - monthly(15)
+     - daily
 
   ###########################################################################
   ## IMDb list - built from IMDb's list data, matched to library. 
@@ -87,8 +84,7 @@ templates:
     radarr_add_missing: false
     sync_mode: sync
     schedule: 
-     - monthly(1)
-     - monthly(15)
+     - daily
 
 collections:
 
