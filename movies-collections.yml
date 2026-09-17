@@ -1,20 +1,15 @@
 ################################################################################
 # movie-collections.yml — Kometa collection file for the Movies library
-#
-# Reference it from config.yml:
-#
-#   libraries:
-#     Movies:
-#       collection_files:
-#         - file: config/movie-collections.yml
 ################################################################################
 
 templates:
 
-  # Actor filmography collection.
-  # Built from TMDb's full credit list for the person, matched against the
-  # library. Titles not in the library are skipped unless radarr_add_missing
-  # is turned on for a given collection.
+  ##############################################################################
+  # Actor filmography - built from TMDb's full credit list for the person, 
+  # matched against the library. Titles not in the library are skipped unless 
+  # radarr_add_missing is turned on for a given collection.
+  ##############################################################################
+
   actor:
     default:
       limit: 200
@@ -30,9 +25,48 @@ templates:
     visible_library: true
     visible_home: false
     visible_shared: true
+    radarr_add_missing: false
+
+  ###########################################################################
+  # TMDb collection - built from TMDb's collection data, matched against the
+  # library. Titles not in the library are skipped unless radarr_add_missing
+  # is turned on for a given collection.
+  ###########################################################################
+  tmdb-lists:
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+      - company
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sync_mode: sync    
+    sort_title: +03_<<collection_name>>
+    radarr_add_missing: true
+
+  ###########################################################################
+  # IMDb list - built from IMDb's list data, matched against the library. 
+  # Titles not in the library are skipped unless radarr_add_missing is turned 
+  # on for a given collection.
+  ###########################################################################
+  imdb-lists:
+    url_poster: <<poster>>
+    summary: <<summary>>
+    sort_title: +03_<<collection_name>>
+    radarr_add_missing: true
+    sync_mode: sync
+
 
 collections:
-
+  ###################################################
+  ## Actor Filmography Collections
+  ###################################################
   Jason Statham:
     template:
       name: actor
@@ -40,3 +74,30 @@ collections:
     summary: >-
       Transporter, bank robber, deep-sea shark bait. Every film in the library
       featuring Jason Statham.
+
+  ###################################################
+  ## Movie Franchise Collections
+  ###################################################
+
+  The Bourne Collection:
+    template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
+  The Fast and the Furious:
+    template: {name: tmdb, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
+  'Mission: Impossible':
+    template: {name: tmdb, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
+  Pirates of the Caribbean:
+    template: {name: tmdb, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/72259}
+  Terminator:
+    template: {name: tmdb, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
+  Transformers:
+    template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
+  Batman:
+    template: {name: tmdb, collections: "120794", tmdb_summary: 120794, poster: https://theposterdb.com/api/assets/52698}
+  John Wick:
+    template: {name: tmdb, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
+  The Godfather:
+    template: {name: tmdb, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
+  Taken:
+    template: {name: tmdb, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
+  Kingsman:
+    template: {name: tmdb, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
