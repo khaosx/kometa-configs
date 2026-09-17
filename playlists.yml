@@ -12,7 +12,7 @@ templates:
   sleepytime:
     sync_mode: sync
     sync_to_users:
-    libraries: tv
+    libraries: TV
     url_poster: https://<<poster>>
     plex_search:
       sort_by:  release.asc
