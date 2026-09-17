@@ -83,7 +83,7 @@ collections:
 
   Jason Statham:
     template:
-      name: actor-no-add
+      name: actor
       tmdb_person_id: 976
     radarr_add_missing: false
     summary: >-
@@ -95,27 +95,27 @@ collections:
   ###################################################
 
   The Bourne Collection:
-    template: {name: tmdb, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
+    template: {name: tmdb-lists, collections: 31562, tmdb_summary: 31562, poster: https://theposterdb.com/api/assets/5420}
   The Fast and the Furious:
-    template: {name: tmdb, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
+    template: {name: tmdb-lists, collections: "9485", tmdb_summary: 9485, poster: https://theposterdb.com/api/assets/10036}
   'Mission: Impossible':
-    template: {name: tmdb, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
+    template: {name: tmdb-lists, collections: "87359", tmdb_summary: 87359, poster: https://theposterdb.com/api/assets/12118}
   Pirates of the Caribbean:
-    template: {name: tmdb, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/72259}
+    template: {name: tmdb-lists, collections: "295", tmdb_summary: 295, poster: https://theposterdb.com/api/assets/72259}
   Terminator:
-    template: {name: tmdb, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
+    template: {name: tmdb-lists, collections: "528", tmdb_summary: 528, poster: https://theposterdb.com/api/assets/26461}
   Transformers:
-    template: {name: tmdb, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
+    template: {name: tmdb-lists, collections: "8650", movies: 424783, tmdb_summary: 8650, poster: https://theposterdb.com/api/assets/33217}
   Batman (Classic/Burton/Schumacher 66-97):
-    template: {name: tmdb, collections: "120794", tmdb_summary: 120794, poster: https://theposterdb.com/api/assets/52698}
+    template: {name: tmdb-lists, collections: "120794", tmdb_summary: 120794, poster: https://theposterdb.com/api/assets/52698}
   John Wick:
-    template: {name: tmdb-add, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
+    template: {name: tmdb-lists, collections: "404609", tmdb_summary: 404609, poster: https://theposterdb.com/api/assets/17550}
   The Godfather:
-    template: {name: tmdb-add, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
+    template: {name: tmdb-lists, collections: "230", tmdb_summary: 230, poster: https://theposterdb.com/api/assets/8934}
   Taken:
-    template: {name: tmdb-add, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
+    template: {name: tmdb-lists, collections: "135483", tmdb_summary: 135483, poster: https://theposterdb.com/api/assets/8826}
   Kingsman:
-    template: {name: tmdb-add, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
+    template: {name: tmdb-lists, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
 
   ###########################################################################
   ## MCU Phases
