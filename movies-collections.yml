@@ -152,31 +152,31 @@ collections:
   ## MCU Phases
 
   DC Animated Universe (DCAU):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie"}
 
   DCU Animated Original Movies:
     template: {name: trakt-lists, trakt_list: https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection}
 
   DC Animated Movie Universe (DCAMU):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie"}
 
   DC Animated Tomorrowverse:
     template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse}
 
   MCU Phase 1 (2008 to 2012):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445730}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie", poster: https://theposterdb.com/api/assets/445730}
 
   MCU Phase 2 (2013 to 2015):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-2-2013-to-2015?mode=movie, poster: https://theposterdb.com/api/assets/445731}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-2-2013-to-2015?mode=movie", poster: https://theposterdb.com/api/assets/445731}
 
   MCU Phase 3 (2016 to 2019):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-3-2016-to-2019?mode=movie, poster: https://theposterdb.com/api/assets/445732}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-3-2016-to-2019?mode=movie", poster: https://theposterdb.com/api/assets/445732}
 
   MCU Phase 4 (2021 to 2022):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-4-2021-to-2022?mode=movie, poster: https://theposterdb.com/api/assets/445733}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-4-2021-to-2022?mode=movie", poster: https://theposterdb.com/api/assets/445733}
 
   MCU Phase 5 (2023 to 2025):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-5-2023-to-2025?mode=movie, poster: https://theposterdb.com/api/assets/445734}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-5-2023-to-2025?mode=movie", poster: https://theposterdb.com/api/assets/445734}
 
   MCU Phase 6 (2025 to 2027):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-6-2026?mode=movie, poster: https://theposterdb.com/api/assets/445735}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-6-2026?mode=movie", poster: https://theposterdb.com/api/assets/445735}
