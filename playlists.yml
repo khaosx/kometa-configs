@@ -63,11 +63,9 @@ playlists:
     summary: Marvel Cinematic Universe In Chronological Order
     sync_to_users: jackienewman
     radarr_add_missing: true
-    sonarr_add_missing: true
   
   Star Wars Chronological:
     template: {name: trakt-lists, list: "https://trakt.tv/users/khaosx/lists/star-wars-timeline?sort=rank,asc", poster: theposterdb.com/api/assets/4448}
     summary: The Star Wars Universe In Chronological Order
     sync_to_users: jackienewman
     radarr_add_missing: true
-    sonarr_add_missing: true
