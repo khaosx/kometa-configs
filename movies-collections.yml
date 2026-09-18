@@ -146,38 +146,11 @@ collections:
     template: {name: tmdb-lists, collections: "391860", tmdb_summary: 391860, poster: https://theposterdb.com/api/assets/6634}
 
   ###########################################################################
-  ## MCU Phases
-  ###########################################################################
-
-  MCU Phase 2 (2013 to 2015):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/, url_poster: https://theposterdb.com/api/assets/445731}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 2.    
-
-  MCU Phase 3 (2016 to 2019):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-3/, url_poster: https://theposterdb.com/api/assets/445732}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 3.
-    
-  MCU Phase 4 (2021 to 2022):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-4/, url_poster: https://theposterdb.com/api/assets/445733}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 4.    
-
-  MCU Phase 5 (2023 to 2025):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-5/, url_poster: https://theposterdb.com/api/assets/445734}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 5.
-
-  MCU Phase 6 (2025 to 2027):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-6/, url_poster: https://theposterdb.com/api/assets/445735}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 6.
-
-  ###########################################################################
   ## Trakt List Collections
   ###########################################################################
-  
+ 
+  ## MCU Phases
+
   DC Animated Universe (DCAU):
     template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie}
 
@@ -191,4 +164,19 @@ collections:
     template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse}
 
   MCU Phase 1 (2008 to 2012):
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, url_poster: https://theposterdb.com/api/assets/445730}
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445730}
+
+  MCU Phase 2 (2013 to 2015):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445731}
+
+  MCU Phase 3 (2016 to 2019):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445732}
+
+  MCU Phase 4 (2021 to 2022):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445733}
+
+  MCU Phase 5 (2023 to 2025):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445734}
+
+  MCU Phase 6 (2025 to 2027):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, poster: https://theposterdb.com/api/assets/445735}
