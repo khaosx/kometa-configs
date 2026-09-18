@@ -72,7 +72,26 @@ templates:
      - daily
 
   ###########################################################################
-  ## IMDb list - built from IMDb's list data, matched to library. 
+  ## Collections built from a Trakt user list, matched to library.
+  ###########################################################################
+
+  trakt-lists:
+    optional:
+      - trakt_list
+      - summary
+      - poster
+    trakt_list: <<trakt_list>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sync_mode: sync
+    limit: 200
+    sort_title: +03_<<collection_name>>
+    collection_order: custom
+    schedule:
+     - daily
+
+  ###########################################################################
+  ## IMDb list - built from IMDb's list data, matched to library.
   ###########################################################################
 
   imdb-lists:
@@ -158,4 +177,20 @@ collections:
   MCU Phase 6 (2025 to 2027):
     template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-6/, url_poster: https://theposterdb.com/api/assets/445735}
     radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 6.  
+    summary: All movies from the Marvel Cinematic Universe Phase 6.
+
+  ###########################################################################
+  ## Trakt List Collections
+  ###########################################################################
+  
+  DC Animated Universe (DCAU):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie}
+
+  DCU Animated Original Movies:
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection}
+
+  DC Animated Movie Universe (DCAMU):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie}
+
+  DC Animated Tomorrowverse:
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse}
