@@ -149,11 +149,6 @@ collections:
   ## MCU Phases
   ###########################################################################
 
-  MCU Phase 1 (2008 to 2012):
-    template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-1/, url_poster: https://theposterdb.com/api/assets/445730}
-    radarr_add_missing: true
-    summary: All movies from the Marvel Cinematic Universe Phase 1
-
   MCU Phase 2 (2013 to 2015):
     template: {name: letterboxd-lists, letterboxd_list: https://letterboxd.com/goodspeed112/list/marvel-cinematic-universe-phase-2/, url_poster: https://theposterdb.com/api/assets/445731}
     radarr_add_missing: true
@@ -194,3 +189,6 @@ collections:
 
   DC Animated Tomorrowverse:
     template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse}
+
+  MCU Phase 1 (2008 to 2012):
+    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie, url_poster: https://theposterdb.com/api/assets/445730}
