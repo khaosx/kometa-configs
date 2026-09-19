@@ -149,20 +149,22 @@ collections:
   ## Trakt List Collections
   ###########################################################################
  
-  ## MCU Phases
+  ## DC Animated Universes
 
   DC Animated Universe (DCAU):
-    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie"}
-
-  DCU Animated Original Movies:
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie", poster: https://theposterdb.com/api/assets/92217}
 
   DC Animated Movie Universe (DCAMU):
-    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie"}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie", poster: https://theposterdb.com/api/assets/73047}
 
   DC Animated Tomorrowverse:
-    template: {name: trakt-lists, trakt_list: https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse?mode=movie", poster: https://theposterdb.com/api/assets/378458}
 
+  DC Animated Original Movies:
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection?mode=movie", poster: https://theposterdb.com/api/assets/72993}
+
+  ## MCU Phases
+  
   MCU Phase 1 (2008 to 2012):
     template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/khaosx/lists/mcu-phase-1-2008-to-2012?mode=movie", poster: https://theposterdb.com/api/assets/445730}
 
