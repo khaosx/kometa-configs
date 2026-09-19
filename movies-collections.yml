@@ -161,7 +161,7 @@ collections:
     template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/anahita-shamsdini-466dd2/lists/tomorrowverse?mode=movie", poster: https://theposterdb.com/api/assets/378458}
 
   DC Animated Original Movies:
-    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection?mode=movie", poster: https://theposterdb.com/api/assets/72993}
+    template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/lists/official/dc-universe-animated-original-movies-collection", poster: https://theposterdb.com/api/assets/72993}
 
   ## MCU Phases
   
