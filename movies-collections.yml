@@ -154,7 +154,7 @@ collections:
   DC Animated Universe (DCAU):
     template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/gratiskeder/lists/dc-animated-universe-dcau?mode=movie", poster: https://theposterdb.com/api/assets/92217}
 
-  DC Animated Movie Universe (DCAMU):
+  DC Animated Justice League Universe (DCAMU):
     template: {name: trakt-lists, trakt_list: "https://app.trakt.tv/users/mri8879/lists/dc-animated-movie-universe-dcamu?mode=movie", poster: https://theposterdb.com/api/assets/73047}
 
   DC Animated Tomorrowverse:
