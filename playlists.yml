@@ -24,6 +24,17 @@ templates:
         episode_last_played.not: 21    # this field only accepts days so weeks cannot be added directly
 
 playlists:
+
+######################################################
+#                      MCU                           #
+######################################################  
+  '(Marvel Universe) Legacy: WWII & The 1940s':
+    sync_mode: sync
+    sync_to_users:
+    libraries: Movies, TV
+    url_poster: https://i.scdn.co/image/ab67616d0000b2738bce26dd1c8180f424cbef00
+    text_file: config/marvel_uni_legacy_ww2_40s.txt
+
 ######################################################
 #                    Smarties                        #
 ######################################################  
