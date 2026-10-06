@@ -40,7 +40,7 @@ playlists:
     sync_to_users:
     libraries: Movies, TV
     url_poster: https://i.scdn.co/image/ab67616d0000b2738bce26dd1c8180f424cbef00
-    text_file: config/marvel_uni_legacy_fox_xmen.txt
+    text_file: https://github.com/khaosx/kometa-configs/blob/main/marvel_uni_legacy_fox_xmen.txt
 
 ######################################################
 #                    Smarties                        #
